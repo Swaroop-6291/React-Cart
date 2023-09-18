@@ -1,0 +1,46 @@
+@import "color";
+@media screen and (max-width:820px) {
+    .cart {
+        
+        grid-template-columns:  1fr;
+        
+        
+        > aside {
+            padding: 2rem;
+            border-radius: 0%;
+          
+          > h2 {
+            margin: 1rem;
+            
+            font: 100 1.3rem "Roboto";
+            letter-spacing: 2px;
+      
+            &:last-of-type {
+              font-weight: 600;
+            }
+          }
+        }
+      }
+      footer{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        .about-us{
+          display: flex;
+          flex-direction: column;
+          width: fit-content;
+          height: fit-content;
+          border-radius:0%;
+        }
+        .contact{
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          
+          align-items: center;
+          width: 100%;
+          
+        }
+      }
+
+}

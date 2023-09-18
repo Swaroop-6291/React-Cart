@@ -1,0 +1,52 @@
+@import "color";
+$text2: url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@200&family=Roboto:wght@100;400;500&display=swap');
+
+nav{
+    background-color: rgb(196, 147, 196);
+    display: flex;
+    justify-content: space-between;
+    padding:  2rem;
+
+    h2 {
+        text-transform: uppercase;
+        color: $primary;
+        font-family: $text2,sans-serif;
+        font-size: xx-large;
+        font-style: italic;
+    }
+
+    >div{
+        display: flex;
+        align-items: center;
+
+        >a{
+            color: $primary;
+            font-size: 1.2rem;
+            font-weight: 900;
+            margin: 0 1rem;
+            transition: all 0.3s;
+            &:hover{
+                transition: all 0.2s ;
+                
+                transform: scale(1.2);
+                
+            }
+    
+            > p{
+                position: absolute;
+                background-color: white;
+                border-radius: 50%;
+                width: 15px;
+                height: 15px;
+                font: 900 0.7rem "Roboto";
+                display: grid;
+                place-items: center;
+                transform: translate(80%,-80%);
+            }
+    
+            
+        }
+    }
+
+   
+}
